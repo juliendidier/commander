@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block title 'Commands' %}
+
+{% block content %}
+    <table class="table table-condensed">
+        <thead> 
+            <tr> 
+                <th>hub</th> 
+                <th>place</th> 
+                <th>thing</th> 
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for command in commands %}
+                <tr>
+                    <td>{{ command.hub }}</td>
+                    <td>{{ command.place }}</td>
+                    <td>{{ command.thing }}</td>
+                    <td>{{ command.action }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

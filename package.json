@@ -1,0 +1,25 @@
+{
+  "name": "commander",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-twig": "^1.1.0",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliendidier/commander.git"
+  },
+  "author": "Julien DIDIER",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juliendidier/commander/issues"
+  },
+  "homepage": "https://github.com/juliendidier/commander#readme"
+}
