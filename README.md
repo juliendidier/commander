@@ -1,6 +1,6 @@
 # Commander
 
-API to launch commands thouth an REST API.
+API to launch commands thouth a REST API.
 
 ## Requirements
 
