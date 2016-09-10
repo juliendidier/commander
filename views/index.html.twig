@@ -6,19 +6,21 @@
     <table class="table table-condensed">
         <thead> 
             <tr> 
-                <th>hub</th> 
                 <th>place</th> 
                 <th>thing</th> 
                 <th>action</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             {% for command in commands %}
                 <tr>
-                    <td>{{ command.hub }}</td>
                     <td>{{ command.place }}</td>
                     <td>{{ command.thing }}</td>
                     <td>{{ command.action }}</td>
+                    <td>
+                        <a href="/api/commands/{{ command.id }}/launch">launch</a>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>
