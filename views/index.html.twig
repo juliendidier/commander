@@ -19,11 +19,22 @@
                     <td>{{ command.thing }}</td>
                     <td>{{ command.action }}</td>
                     <td>
-                        <a href="/api/commands/{{ command.id }}/launch">launch</a>
+                        <a class="ajax" data-href="/api/commands/{{ command.id }}/launch">launch</a>
                     </td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
+{% endblock %}
 
+{% block javascripts %}
+    <script>
+        $(document).ready(function() {
+            $("a.ajax").on("click", function(){
+                $.ajax({
+                    url: $(this).data("href")
+                });
+            });
+        });
+    </script>
 {% endblock %}
